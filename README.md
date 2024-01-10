@@ -12,7 +12,7 @@ terraform {
   }
   required_version = "~>1.6"
   backend "s3" {
-    bucket  = "ng.general.terraform-states"
+    bucket  = "ng-general-terraform-states"
     key     = "states/$$$PROJECT_NAME_HERE/terraform.tfstate"
     region  = "eu-central-1"
     encrypt = true
