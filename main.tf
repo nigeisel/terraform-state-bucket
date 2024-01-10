@@ -10,7 +10,7 @@ locals {
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "ng.general.terraform-states"
+  bucket = "ng-general-terraform-states"
   lifecycle {
     prevent_destroy = true
   }
